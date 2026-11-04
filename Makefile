@@ -1,14 +1,16 @@
 SRC:=./src
+MAIN:=./pac-man.py
+CONFIG:=./config.json
 
 
 install:
-	
+	uv sync
 
 run:
-	
+	python3 $(MAIN) $(CONFIG)
 
 debug: 
-	
+	python3 -m pdb $(MAIN) $(CONFIG)
 
 clean:
 	find $(SRC) \( -name "__pycache__" -o -name ".mypy_cache" \) -prune -exec rm -rf {} +
