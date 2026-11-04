@@ -1,2 +1,7 @@
 # Uncomment the lanes below for evaluation
 # tools/
+
+typings/
+.venv/
+.mypy_cache/
+.vscode/
