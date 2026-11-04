@@ -1,0 +1,3 @@
+import mazegenerator
+
+mazegenerator
