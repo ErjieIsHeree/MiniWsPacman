@@ -1,2 +1,5 @@
+from .main import pacman
+
+
 def main() -> None:
-    print("Hello from pacman!")
+    pacman()

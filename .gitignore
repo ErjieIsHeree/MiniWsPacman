@@ -5,4 +5,4 @@ typings/
 **/.venv/
 **/.mypy_cache/
 **/.vscode/
-**/.mypy_cache/
+**/__pycache__/
