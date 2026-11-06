@@ -1,4 +1,4 @@
-_This project has been created as part of the 42 curriculum by exia and _ # TODO Add my partner name
+_This project has been created as part of the 42 curriculum by exia and yuhli_
 
 # Pac-Man
 
@@ -41,7 +41,3 @@ echo example
 ### General Software Architecture
 
 ### Project Management
-
-```
-
-```

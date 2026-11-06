@@ -6,6 +6,9 @@ CONFIG:=./config.json
 install:
 	uv sync
 
+uvr:
+	uv run $(MAIN) $(CONFIG)
+
 run:
 	python3 $(MAIN) $(CONFIG)
 
