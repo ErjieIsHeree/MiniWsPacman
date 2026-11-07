@@ -1,0 +1,89 @@
+Help on class Mlx in module mlx.mlx:
+
+class Mlx(builtins.object)
+ |  Methods defined here:
+ |
+ |  __init__(self)
+ |      Initialize self.  See help(type(self)) for accurate signature.
+ |
+ |  mlx_clear_window(self, mlx_ptr, win_ptr)
+ |
+ |  mlx_destroy_image(self, mlx_ptr, img_ptr)
+ |
+ |  mlx_destroy_window(self, mlx_ptr, win_ptr)
+ |
+ |  mlx_do_key_autorepeatoff(self, mlx_ptr)
+ |
+ |  mlx_do_key_autorepeaton(self, mlx_ptr)
+ |
+ |  mlx_do_sync(self, mlx_ptr)
+ |
+ |  mlx_expose_hook(self, win_ptr, callback, param)
+ |
+ |  mlx_get_data_addr(self, img_ptr)
+ |
+ |  mlx_get_screen_size(self, mlx_ptr)
+ |
+ |  mlx_hook(self, win_ptr, x_event, x_mask, callback, param)
+ |
+ |  mlx_init(self)
+ |
+ |  mlx_key_hook(self, win_ptr, callback, param)
+ |
+ |  mlx_loop(self, mlx_ptr)
+ |
+ |  mlx_loop_exit(self, mlx_ptr)
+ |
+ |  mlx_loop_hook(self, mlx_ptr, callback, param)
+ |
+ |  mlx_mouse_get_pos(self, mlx_ptr)
+ |
+ |  mlx_mouse_hide(self, mlx_ptr)
+ |
+ |  mlx_mouse_hook(self, win_ptr, callback, param)
+ |
+ |  mlx_mouse_move(self, mlx_ptr, x, y)
+ |
+ |  mlx_mouse_show(self, mlx_ptr)
+ |
+ |  mlx_new_image(self, mlx_ptr, width, height)
+ |
+ |  mlx_new_window(self, mlx_ptr, width, height, title)
+ |
+ |  mlx_pixel_put(self, mlx_ptr, win_ptr, x, y, color)
+ |
+ |  mlx_png_file_to_image(self, mlx_ptr, filename)
+ |
+ |  mlx_put_image_to_window(self, mlx_ptr, win_ptr, img_ptr, x, y)
+ |
+ |  mlx_release(self, mlx_ptr)
+ |
+ |  mlx_string_put(self, mlx_ptr, win_ptr, x, y, color, string)
+ |
+ |  mlx_sync(self, mlx_ptr, cmd, img_or_win_ptr)
+ |
+ |  mlx_xpm_file_to_image(self, mlx_ptr, filename)
+ |
+ |  ----------------------------------------------------------------------
+ |  Data descriptors defined here:
+ |
+ |  __dict__
+ |      dictionary for instance variables
+ |
+ |  __weakref__
+ |      list of weak references to the object
+ |
+ |  ----------------------------------------------------------------------
+ |  Data and other attributes defined here:
+ |
+ |  SYNC_IMAGE_WRITABLE = 1
+ |
+ |  SYNC_WIN_COMPLETED = 3
+ |
+ |  SYNC_WIN_FLUSH = 2
+
+掩码	含义
+1	KeyPressMask，接收键盘按下事件
+2	KeyReleaseMask，接收键盘松开事件
+4	ButtonPressMask，接收鼠标按下事件
+0	没有设置任何事件掩码位

@@ -1,5 +1,8 @@
-# from mazegenerator import MazeGenerator
+from mazegenerator import MazeGenerator
 
 
-def pacman() -> None:
-    print("Hello pacman")
+g = MazeGenerator(size=(15, 15), seed=42)
+g.generate()
+print(g.maze)
+
+# 0000 WSEN
