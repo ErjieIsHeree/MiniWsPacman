@@ -4,16 +4,16 @@ from typing import Any
 from mlx import Mlx
 
 
-WIN_W, WIN_H = 640, 200  #the size of window
-SIZE = 32    # the size of ghost
-SPEED = 60.0 # Movement speed  in pixels pr second
+WIN_W, WIN_H = 640, 200  # the size of window
+SIZE = 32       # the size of ghost
+SPEED = 60.0    # Movement speed  in pixels pr second
 
-#key_codes
+# key_codes
 KEY_ESC = 65307
 KEY_LEFT, KEY_UP, KEY_RIGHT, KEY_DOWN = 65361, 65362, 65363, 65364
 KEY_A, KEY_W, KEY_D, KEY_S = 97, 119, 100, 115
 
-#Store the ghost's position, direction and last update time
+# Store the ghost's position, direction and last update time
 ghost: dict[str, Any] = {
     "x": 100.0,
     "y": 80.0,
