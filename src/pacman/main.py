@@ -29,18 +29,3 @@ m.mlx_loop(mlx_ptr)
 
 def pacman() -> None:
     print("Hello, world!")
-
-
-# HI Erjie, ill give u a notes of things to try while u are at 42:
-# 1-pixel_put functions
-# 2-new_image function
-#
-# After doing these ill probably be able to figure out on how to make the menua
-# and at least the base map (an image of it) with the pixel put
-#
-# with new_image ill make the animations and the new states of the items
-#
-# Dont forget that all of these depends on loops (key and mouse hooks)
-
-
-# 0000 WSEN
