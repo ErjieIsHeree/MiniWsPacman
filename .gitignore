@@ -1,7 +1,7 @@
-# Uncomment the lanes below for evaluation
+# TODO Uncomment the lanes below for evaluation
 # tools/
+# typings/
 
-typings/
 **/.venv/
 **/.mypy_cache/
 **/.vscode/
