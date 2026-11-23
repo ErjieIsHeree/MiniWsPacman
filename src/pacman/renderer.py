@@ -73,7 +73,8 @@ class Renderer:
                 if grid.has_wall(x, y, WALL_W):
                     fill_rect(data, size_line, px, py, WALL, t, BLUE)
                 if grid.has_wall(x, y, WALL_E):
-                    fill_rect(data, size_line, px + t - WALL, py,
+                    fill_rect(data,
+                              size_line, px + t - WALL, py,
                               WALL, t, BLUE)
         for (gx, gy) in pacgums:
             self._paint_dot(data, size_line, gx, gy, 4, WHITE)
@@ -97,6 +98,23 @@ class Renderer:
                         self.background)
         self._paint_dot(self.bg_data, self.bg_line, gx, gy, 16, BLACK)
 
+    def draw_background(self) -> None:
+        """Put the maze image on the window(covers the previous frame)."""
+        self.m.mlx_put_image_to_window(self.mlx_ptr, self.win,
+                                       self.background, 0, 0)
+
+    def draw_sprite(self, img: Any, x: float, y: float) -> None:
+        """Put a sprite on cell position (x, y); floats allowed."""
+        margin = 4
+        px = int(x * self.tile) + margin
+        py = int(y * self.tile) + margin
+        self.m.mlx_put_image_to_window(self.mlx_ptr, self.win, img, px, py)
+
+    def draw_text(self, x: int, y: int, text: str,
+                  color: int = 0xFFFFFF) -> None:
+        """Write text at pixel position (x, y)."""
+        self.m.mlx_string_put(self.mlx_ptr, self.win, x, y, color, text)
+
     def destroy(self) -> None:
         """Free every image. Call before destroying the window."""
         for img in self.images:
@@ -105,5 +123,3 @@ class Renderer:
         if self.background is not None:
             self.m.mlx_destroy_image(self.mlx_ptr, self.background)
             self.background = None
-
-
