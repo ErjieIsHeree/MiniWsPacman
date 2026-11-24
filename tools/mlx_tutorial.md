@@ -82,7 +82,7 @@ Ejemplos: rojo opaco `0xFFFF0000`, verde `0xFF00FF00`, azul `0xFF0000FF`, blanco
 Una función cómoda para componer colores:
 
 ```python
-def rgb(r, g, b, a=255):
+def rgb(r: int, g: int, b: int, a: int = 255) -> int:
     return (a << 24) | (r << 16) | (g << 8) | b
 ```
 

@@ -18,7 +18,7 @@ def color_bytes(color, fmt):
 def put_pixel(data, line, bpp, fmt, w, h, x, y, color):
     if 0 <= x < w and 0 <= y < h:
         off = get_offset(x, y, line, bpp)
-        data[off:off + 4] = color_bytes(color, fmt)
+        data[off:off + 4 * 100] = color_bytes(color, fmt) * 100
 
 
 def game_test(
